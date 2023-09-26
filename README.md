@@ -1,9 +1,26 @@
 # Fire Detection
-![A test image](fire.jpeg) 
-> - The main aim of the project is to Detect the fire using Image Processing (cv2).
-> - To show how image processing is rapid (x10 faster) compare to real time sensors
-> - I Used a pretrained model i.e haar cascade algorithm to detect fire (path = xml/fire_detection.xml)
-> - Code includes Blynk app(iot) to give alert when fire is detected which will be connected through wifi. 
-> - Hardwares like smoke and fire sensors were integrated with Esp32 (μ-controller), to show difference between sensors vs image processing. 
-> - To run the code you can install conda yml file 
-> - To test just place match stick fire infront of camera. 
+
+![Fire Detection](fire.jpeg)
+
+## Overview
+
+The main aim of this project is to detect fires using image processing techniques, specifically OpenCV (cv2). We aim to demonstrate the speed and effectiveness of image processing in fire detection, which is up to 10 times faster compared to real-time sensors.
+
+## Features
+
+- Utilizes a pretrained model based on the Haar Cascade algorithm for fire detection (model path: `xml/fire_detection.xml`).
+- Includes integration with the Blynk IoT platform to provide real-time alerts when a fire is detected. The system connects to Wi-Fi for seamless communication.
+- Demonstrates a hardware comparison by integrating smoke and fire sensors with an ESP32 microcontroller. This comparison highlights the differences between traditional sensors and image processing.
+- The project can be easily executed by installing the provided Conda environment using the YAML file.
+- To test the system, simply place a lit matchstick in front of the camera to trigger the fire detection process.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone this repository to your local machine.
+
+2. Install the Conda environment using the provided YAML file:
+
+   ```bash
+   conda env create -f environment.yml
